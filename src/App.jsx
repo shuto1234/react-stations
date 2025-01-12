@@ -1,7 +1,7 @@
 // DO NOT DELETE
 
 import './App.css'
-import React,{useEffect, useState} from 'react'
+import React,{useState} from 'react'
 
 /**
  * @type {() => JSX.Element}
@@ -46,17 +46,16 @@ export const App = () => {
 
   return (
     <>
-      <header>Dogアプリ</header>
-      <body>
-        <p>犬の画像を表示するサイトです</p>
-        <img src={dogUrl}></img>
-        <p>
-          <button onClick={loadedDog}>クリック</button>
-        </p>
-        <div>
-          {dogUrl}
+      <header className='header'>Dogアプリ</header>
+      <section>
+        <div className='explanation'>犬の画像を表示するサイトです</div>
+        <div className='imagePage'>
+          <img src={dogUrl} className='image'></img>
+          <p>
+            <button className="button" onClick={loadedDog}>クリック</button>
+          </p>
         </div>
-      </body>
+      </section>
     </>
   )
 }
