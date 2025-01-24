@@ -28,13 +28,15 @@ export const Description = () => {
 
   return (
     <section>
-      <div className='explanation'>犬の画像を表示するサイトです</div>
-      <div className='imagePage'>
-        <DogImage imageUrl={dogUrl} />
-        <p>
-          <button className="button" onClick={loadedDog}>クリック</button>
+      <div className='explanation'>犬の画像を表示するサイトです
+        <p className="buttons">
+          <button className="button1" onClick={loadedDog}>クリック</button>
         </p>
       </div>
+      <div className='imagePage'>
+        <DogImage imageUrl={dogUrl} />
+      </div>
+     
     </section>    
   )
 };
