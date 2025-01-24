@@ -30,14 +30,50 @@ section {
 
 .image{
   object-fit: cover;
-  width: 100%;
+  width: 300px;
   height: 300px;
 }
 
+.buttons{
+  display: flex;
+}
 
-/* 
-.button{
-  background-color: blue;
-  color: white;
-  border: none;
-} */
+.button1 {
+  margin: auto;
+  padding: auto;
+} 
+.button2 {
+  margin: 10px;
+  padding: auto;
+} 
+
+.h3 {
+  background-color: #f5f5f5;
+  margin: 0;
+  text-align: center;
+}
+
+hr{
+  width: 100%;
+}
+
+.imageDogs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+.noneImageDogs {
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.imageDog {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.flex{
+  text-align: center;
+}
